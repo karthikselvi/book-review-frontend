@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&display=swap');
+
+
+.registernewbtn{
+    border-radius: 20px;
+    border: 1px solid #ff4b2b;
+    background-color: #ff4b2b;
+    color: #ffffff; 
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+  }
+  .registernewbtn:active {
+    transform: scale(0.95);
+  }
+  .registernewbtn:hover{
+    background-color: rgb(255, 132, 0);
+  }
+.main_container{
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: grid;
+    background: linear-gradient(-45deg,rgb(223, 145, 221), #9feddb, #e89b9b);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+
+}
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+.form2_container{
+  animation: slideIn 0.8s ease-out;
+  background-color: rgba(255, 255, 255, .15);  
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 65%;
+  height: auto;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 3px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+
+
+}
+.form2_container:hover{
+  height: auto;
+  box-shadow: 0 4px 8px 7px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+body {
+
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes slideIn {
+  0% {
+      transform: translateX(-3%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+#field_div{
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  min-height: 12vh;
+
+}
+.form_container{
+  padding: 20px;
+  display: flex;
+  justify-content: first baseline;
+
+}
+.main_container{
+  display:flex;
+  justify-content: center;
+
+}
+.error_msg{
+  color: rgb(255, 0, 0);
+  font-size: 10px;
+  font-weight: 300;
+  padding-left: 5%;
+  padding-top: 2px;
+  padding-right: 5%;
+  font-weight: 600;
+  width: fit-content;
+  text-shadow: 2px 2px 4px rgba(134, 122, 122, 0.5);
+
+}
+.form_main_div{
+  text-align: center;
+  border-radius: 15px;
+  padding: 10%;
+  width: 100%;
+  min-width: 100%;
+
+}
+label{
+  background-color: transparent;
+}
+.button_div{
+  width: 100%;
+  display: flex;
+  justify-content:center ;
+}
+#already_user{
+  font-size: medium;
+}
+.create_account{
+  font-family: 'Rubik', sans-serif;
+  font-size: 25px;
+  opacity: 80%;
+}
+
+.form2_container2{
+  width: 50%;
+  height: 100%;
+}
+.form2_container1{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  border: 0.5px  rgb(117, 117, 117);
+  border-radius: 0px;
+  border-right: 1px  groove #006a8a;
+
+
+}
+.form2_container1_1{
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.form_img{
+  width: 100%;
+  height: auto;
+}
+.form2_container1_0{
+  height: 50%;
+  display: flex;
+  justify-content: center;
+}
+.form_img_top{
+ width: 70%;
+ height: auto;
+}
+.form2_container_header{
+font-family: 'MuseoModerno', sans-serif;
+height: 30%;
+font-size: 25px;
+display: flex;
+align-items: start;
+}
+.logo_img{
+  width: 6%;
+  height: auto;
+}
+.invalid{
+  font-size: medium;
+  animation: blink 1s infinite; /* Adjust the duration as needed */
+  color: rgb(255, 43, 43);
+}
+.form-check{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 130px;
+}
+.new_user_font{
+  padding-top: 10px;
+  font-size: medium;
+  color: rgb(0, 0, 0);
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 750px) {
+  .form_main_div{
+  }
+  .form2_container_header{
+    }
+  .create_account{
+    font-size: 20px;
+  }
+  .form2_container{
+    width: 100%;
+  }
+  .form2_container1{
+    display: none;
+  }
+
+
+}
+@media (max-width: 361px) {
+  .form_main_div{
+      width: 80%;
+  }
+  .form2_container2{
+    width: 100%;
+  }
+  .invalid{
+      font-size: 10px;
+  }
+
+}
+
