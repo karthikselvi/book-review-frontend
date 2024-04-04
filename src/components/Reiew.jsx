@@ -9,7 +9,7 @@ function Review({ id }) {
   const [open, setOpen] = useState(false)
   console.log(review)
   useEffect(() => {
-    fetch(`http://localhost:3000/review/${id}`).then(res => res.json()).then(data => setReview(data))
+    fetch(`https://book-review-backend-1.onrender.com/review/${id}`).then(res => res.json()).then(data => setReview(data))
   }, [])
 
   return (

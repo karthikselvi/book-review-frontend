@@ -22,7 +22,7 @@ function ContactUs() {
                         initialValues={{ email: '', report: '' }}
                         validationSchema={LoginSchema}
                         onSubmit={(values, { setSubmitting }) => {
-                            axios.post("http://localhost:3000/reports", {
+                            axios.post("https://book-review-backend-1.onrender.com/reports", {
                                 email: values.email,
                                 report: values.name
 

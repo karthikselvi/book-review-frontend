@@ -11,17 +11,17 @@ const [btnAuthor,setBtnAuthor]=useState(false)
 const [btnGenre,setBtnGenre]=useState(false)
 
 useEffect(()=>{
-  fetch("http://localhost:3000/bookdetails").then(res=> res.json()).then(data=> setData(data))
+  fetch("https://book-review-backend-1.onrender.com/bookdetails").then(res=> res.json()).then(data=> setData(data))
 },[])
 function handleLove(){
-  axios.get('http://localhost:3000/bookdetails/genre/Love').then(res => { setData(res.data) }
+  axios.get('https://book-review-backend-1.onrender.com/bookdetails/genre/Love').then(res => { setData(res.data) }
 
 ).catch(console.error)
 
 }
 function handleThriller(){
   console.log("hey")
-  axios.get('http://localhost:3000/bookdetails/genre/thriller').then(res => { setData(res.data) }
+  axios.get('https://book-review-backend-1.onrender.com/bookdetails/genre/thriller').then(res => { setData(res.data) }
 
 
 ).catch(console.error)

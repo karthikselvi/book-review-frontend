@@ -7,7 +7,7 @@ function Banner() {
   const [query,setQuery]=useState("")
   const [books,setBooks]=useState([])
   useEffect(()=>{
-      fetch("http://localhost:3000/bookdetails").then(res=> res.json()).then(data=> setBooks(data.slice(0, 7)))
+      fetch("https://book-review-backend-1.onrender.com/bookdetails").then(res=> res.json()).then(data=> setBooks(data.slice(0, 7)))
   },[])
   function handleClick(id) {
     return redirect(`/book/${id}`)

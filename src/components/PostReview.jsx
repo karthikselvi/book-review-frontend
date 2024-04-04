@@ -27,7 +27,7 @@ const [value, setValue] = useState(0);
                 initialValues={{ name: '', message: '', star: '' }}
                 validationSchema={ReviewSchema}
                 onSubmit={(values, { setSubmitting }) => {
-                    axios.post('http://localhost:3000/review', {
+                    axios.post('https://book-review-backend-1.onrender.com/review', {
                         bookId: BookId,
                         name: values.name,
                         message: values.message,

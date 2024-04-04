@@ -5,8 +5,8 @@ function FavoriteBooks() {
     const [books,setBooks]=useState([])
     const [books2,setBooks2]=useState([])
     useEffect(()=>{
-        fetch("http://localhost:3000/bookdetails").then(res=> res.json()).then(data=> setBooks(data.slice(0, 7)))
-        fetch("http://localhost:3000/bookdetails").then(res=> res.json()).then(data=> setBooks2(data.slice(8, 16)))
+        fetch("https://book-review-backend-1.onrender.com/bookdetails").then(res=> res.json()).then(data=> setBooks(data.slice(0, 7)))
+        fetch("https://book-review-backend-1.onrender.com/bookdetails").then(res=> res.json()).then(data=> setBooks2(data.slice(8, 16)))
     },[])
   return (
     <div style={{position:"static"}}>

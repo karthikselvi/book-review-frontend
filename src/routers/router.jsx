@@ -24,7 +24,7 @@ import Books from "../shop/Books";
         {
           path:"/book/:id",
           element:<SingleBook/>,
-          loader:({params}) => fetch(`http://localhost:3000/bookdetails/${params.id}`)
+          loader:({params}) => fetch(`https://book-review-backend-1.onrender.com/bookdetails/${params.id}`)
       }
       ]
     },
